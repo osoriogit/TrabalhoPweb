@@ -1,0 +1,873 @@
+{
+  "Version": 1,
+  "Hash": "ZAfknEZfxS1nmQnFQGjbrsvnezydkqTBp1aMvepajiI=",
+  "Source": "UtilidadesMaui",
+  "BasePath": "/",
+  "Mode": "Root",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\UtilidadesRCL.csproj",
+      "Version": 2,
+      "Source": "UtilidadesRCL",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [
+    {
+      "Name": "UtilidadesMaui\\wwwroot",
+      "Source": "UtilidadesMaui",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\wwwroot\\",
+      "BasePath": "/",
+      "Pattern": "**"
+    },
+    {
+      "Name": "UtilidadesRCL\\wwwroot",
+      "Source": "UtilidadesRCL",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\",
+      "BasePath": "_content/UtilidadesRCL",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\UtilidadesMaui.styles.css",
+      "SourceId": "UtilidadesMaui",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\",
+      "BasePath": "/",
+      "RelativePath": "UtilidadesMaui#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "bk4q7whplu",
+      "Integrity": "ZS90oG+cSK2hrXJlKYn3iX491QN0vE/s3NSPeQYV1zQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\UtilidadesMaui.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\wwwroot\\index.html",
+      "SourceId": "UtilidadesMaui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l8agk00jr6",
+      "Integrity": "1ettKEKeZv4vp+m4BmYcVHXC8AVwIh8pNp1q6lZ08Co=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UtilidadesRCL.bundle.scp.css",
+      "SourceId": "UtilidadesRCL",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/UtilidadesRCL",
+      "RelativePath": "UtilidadesRCL#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "bbi5taqhoc",
+      "Integrity": "93DX/9yiidkAc5INA4pipGKPtmDUWT8eV7FnK6Sgc9U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UtilidadesRCL.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\app.css",
+      "SourceId": "UtilidadesRCL",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\",
+      "BasePath": "_content/UtilidadesRCL",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0wvphsmvzl",
+      "Integrity": "sC5cLbqWF3JfGWQGgBtv3TmECrv2Esc3nf1oIBQfzFY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\background.png",
+      "SourceId": "UtilidadesRCL",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\",
+      "BasePath": "_content/UtilidadesRCL",
+      "RelativePath": "background#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x2rx4ajns0",
+      "Integrity": "WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "UtilidadesRCL",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\",
+      "BasePath": "_content/UtilidadesRCL",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "UtilidadesRCL",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\",
+      "BasePath": "_content/UtilidadesRCL",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\favicon.png",
+      "SourceId": "UtilidadesRCL",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\",
+      "BasePath": "_content/UtilidadesRCL",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\favicon.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/UtilidadesRCL/app.0wvphsmvzl.css",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sC5cLbqWF3JfGWQGgBtv3TmECrv2Esc3nf1oIBQfzFY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0wvphsmvzl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sC5cLbqWF3JfGWQGgBtv3TmECrv2Esc3nf1oIBQfzFY="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/UtilidadesRCL/app.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/app.css",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sC5cLbqWF3JfGWQGgBtv3TmECrv2Esc3nf1oIBQfzFY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sC5cLbqWF3JfGWQGgBtv3TmECrv2Esc3nf1oIBQfzFY="
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/background.png",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/background.x2rx4ajns0.png",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x2rx4ajns0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/UtilidadesRCL/background.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/UtilidadesRCL/bootstrap/bootstrap.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/UtilidadesRCL/bootstrap/bootstrap.min.css.map"
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/UtilidadesRCL/favicon.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/favicon.png",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/UtilidadesRCL.bbi5taqhoc.bundle.scp.css",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UtilidadesRCL.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"93DX/9yiidkAc5INA4pipGKPtmDUWT8eV7FnK6Sgc9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Oct 2025 11:52:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bbi5taqhoc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-93DX/9yiidkAc5INA4pipGKPtmDUWT8eV7FnK6Sgc9U="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/UtilidadesRCL/UtilidadesRCL.bundle.scp.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/UtilidadesRCL/UtilidadesRCL.bundle.scp.css",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UtilidadesRCL.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"93DX/9yiidkAc5INA4pipGKPtmDUWT8eV7FnK6Sgc9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Oct 2025 11:52:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-93DX/9yiidkAc5INA4pipGKPtmDUWT8eV7FnK6Sgc9U="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ettKEKeZv4vp+m4BmYcVHXC8AVwIh8pNp1q6lZ08Co=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ettKEKeZv4vp+m4BmYcVHXC8AVwIh8pNp1q6lZ08Co="
+        }
+      ]
+    },
+    {
+      "Route": "index.l8agk00jr6.html",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ettKEKeZv4vp+m4BmYcVHXC8AVwIh8pNp1q6lZ08Co=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 20:07:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l8agk00jr6"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ettKEKeZv4vp+m4BmYcVHXC8AVwIh8pNp1q6lZ08Co="
+        }
+      ]
+    },
+    {
+      "Route": "UtilidadesMaui.bk4q7whplu.styles.css",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\UtilidadesMaui.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZS90oG+cSK2hrXJlKYn3iX491QN0vE/s3NSPeQYV1zQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Dec 2025 16:30:07 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/UtilidadesRCL/UtilidadesRCL.bbi5taqhoc.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bk4q7whplu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZS90oG+cSK2hrXJlKYn3iX491QN0vE/s3NSPeQYV1zQ="
+        },
+        {
+          "Name": "label",
+          "Value": "UtilidadesMaui.styles.css"
+        }
+      ]
+    },
+    {
+      "Route": "UtilidadesMaui.styles.css",
+      "AssetFile": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesMaui\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\UtilidadesMaui.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZS90oG+cSK2hrXJlKYn3iX491QN0vE/s3NSPeQYV1zQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Dec 2025 16:30:07 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/UtilidadesRCL/UtilidadesRCL.bbi5taqhoc.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZS90oG+cSK2hrXJlKYn3iX491QN0vE/s3NSPeQYV1zQ="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UtilidadesRCL.bundle.scp.css",
+      "PackagePath": "staticwebassets\\UtilidadesRCL.bbi5taqhoc.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\TPpweb\\UtilidadesRCL\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UtilidadesRCL.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UtilidadesRCL.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.UtilidadesRCL.props",
+      "PackagePath": "build\\UtilidadesRCL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.UtilidadesRCL.props",
+      "PackagePath": "buildMultiTargeting\\UtilidadesRCL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.UtilidadesRCL.props",
+      "PackagePath": "buildTransitive\\UtilidadesRCL.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
