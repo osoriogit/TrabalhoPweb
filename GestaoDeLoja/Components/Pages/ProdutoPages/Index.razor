@@ -1,0 +1,86 @@
+﻿@page "/produtos"
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using GestaoDeLoja.Entities
+@using GestaoDeLoja.Data
+@using Microsoft.AspNetCore.Authorization
+
+@implements IAsyncDisposable
+@inject IDbContextFactory<GestaoDeLoja.Data.ApplicationDbContext> DbFactory
+
+@attribute [Authorize]
+
+<PageTitle>Produtos</PageTitle>
+
+<h1>Lista de produtos</h1>
+<AuthorizeView Roles="Admin">
+<p>
+    <a href="produtos/create">Novo produto</a>
+</p>
+</AuthorizeView>
+<QuickGrid Class="table" Items="produtos">
+        <TemplateColumn Title="Imagem" Context="produto">
+        @if (!string.IsNullOrEmpty(produto.UrlImagem))
+        {
+            <img src="@($"data:image/png;base64, {Convert.ToBase64String(produto.Imagem)}")"
+                 alt="@produto.Nome" style="max-width:100px;max-height:100px;" />
+        }
+        else
+        {
+            <img src="img/placeholder.png" style="max-width:100px;max-height:100px;" />
+
+        }
+    </TemplateColumn>
+    <PropertyColumn Property="produto => produto.Nome" />
+@*     <PropertyColumn Property="produto => produto.Detalhe" />
+ *@    <PropertyColumn Property="produto => produto.Preco" />
+   
+@*     <PropertyColumn Property="produto => produto.UrlImagem" />
+    <PropertyColumn Property="produto => produto.Imagem" /> 
+ *@   @* 
+    <PropertyColumn Property="produto => produto.Promocao" />
+    <PropertyColumn Property="produto => produto.MaisVendido" />
+    <PropertyColumn Property="produto => produto.EmStock" /> *@
+    <PropertyColumn Property="produto => produto.Disponivel" />
+@*     <PropertyColumn Property="produto => produto.Origem" />
+ *@        
+    <PropertyColumn Title ="Categoria" Property="@(produto => produto.categoria == null? "sem categoria" :produto.categoria.Nome )"
+        />
+@*     <PropertyColumn Property="@(produto => produto.modoEntrega == null ?" sem modo de entrega" :produto.modoEntrega.Nome )" />
+ *@
+        
+    <TemplateColumn Context="produto">
+
+        <a href="@($"produtos/details?id={produto.Id}")"><i class="bi bi-card-checklist"></i></a>
+
+        <AuthorizeView Roles="Admin">
+    
+
+            <a href="@($"produtos/edit?id={produto.Id}")"><i class="bi bi-pencil-square"></i></a> 
+            | 
+            <a href="@($"produtos/delete?id={produto.Id}")"><i class="bi bi-trash3"></i></a>
+        </AuthorizeView>
+       
+       
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+    private ApplicationDbContext context = default!;
+   
+    IQueryable<Produto> produtos = default;
+
+
+    protected override void OnInitialized()
+    {
+        context = DbFactory.CreateDbContext();
+        // Corrigido: Inclua apenas as entidades de navegação, não propriedades internas
+        produtos = context.Produtos
+            .Include(p => p.categoria)
+            .Include(p => p.modoEntrega)
+            .ToList()
+            .AsQueryable();
+    }
+
+    public async ValueTask DisposeAsync() => await context.DisposeAsync();
+}

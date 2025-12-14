@@ -1,0 +1,64 @@
+﻿@* @layout LayoutAdmin
+ *@
+
+@page "/categoria"
+@using GestaoDeLoja.Components.Account.Shared
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using GestaoDeLoja.Entities
+@using GestaoDeLoja.Data
+@using Microsoft.AspNetCore.Authorization
+
+@implements IAsyncDisposable
+@inject IDbContextFactory<GestaoDeLoja.Data.ApplicationDbContext> DbFactory
+
+@* @attribute [Authorize]
+@attribute [Authorize( Roles = "Admin")]
+ *@
+<PageTitle>Lista de Categorias</PageTitle>
+
+<h1>Index</h1>
+<AuthorizeView Roles="Admin">
+    <p>
+        <a href="categoria/create">Create New</a>
+    </p>
+</AuthorizeView>
+
+
+<QuickGrid Class="table" Items="context.Categorias">
+    <PropertyColumn Property="categoria => categoria.Nome" />
+    <PropertyColumn Property="categoria => categoria.Ordem" />
+    <PropertyColumn Property="categoria => categoria.UrlImagem" />
+@*     <PropertyColumn Property="categoria => categoria.Imagem" />
+ *@
+
+
+     <TemplateColumn Context="categoria">
+        @if (categoria.Imagem is not null && categoria.Imagem.Length > 0)
+        {
+            <img src="@($"data:image/png;base64, {Convert.ToBase64String(categoria.Imagem)}")"
+            alt="@categoria.Nome" style="max-width:100px;max-height:100px;"/>
+        }
+        else
+        {
+        <img src="img/placeholder.png" style="max-width:100px;max-height:100px;" />
+        }
+    </TemplateColumn>
+
+    <TemplateColumn Context="categoria">
+        <a href="@($"categoria/edit?id={categoria.Id}")"><i class="bi bi-pencil-square"></i></a> |
+        <a href="@($"categoria/details?id={categoria.Id}")"><i class="bi bi-card-checklist"></i></a> |
+        <a href="@($"categoria/delete?id={categoria.Id}")"><i class="bi bi-trash3"></i></a>
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+    private ApplicationDbContext context = default!;
+
+    protected override void OnInitialized()
+    {
+        context = DbFactory.CreateDbContext();
+    }
+
+    public async ValueTask DisposeAsync() => await context.DisposeAsync();
+}

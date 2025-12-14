@@ -1,0 +1,131 @@
+﻿@page "/admin/users"
+@using GestaoDeLoja.Data
+@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<ApplicationUser> UserManager
+@inject RoleManager<IdentityRole> RoleManager
+
+<h3>Gestão de Utilizadores</h3>
+<h4>Lista de Utilizadores</h4>
+@if (users is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        @foreach (var user in users)
+        {
+            <div class="col-3">
+                <p>
+                    @user.UserName
+                </p>
+            </div>
+            <div class="col-3">
+                <p>
+                    @user.Nome
+                </p>
+            </div>
+            <div class="col-3">
+                <p>
+                    @user.Apelido
+                </p>
+            </div>
+            <div class="col-1">
+                <p>
+                    @user.NIF
+                </p>
+            </div>
+            <div class="col-2">
+                <p>
+                    @if (userRoles.ContainsKey(user.Id))
+                    {
+                        foreach (var role in userRoles[user.Id])
+                        {
+
+                            <span>  @role </span>
+                            <button @onclick="() =>RemoverRole(user.Id, role) " >X</button>
+                        }
+                    }
+                </p>
+            </div>
+        }
+    </div>
+    <h4>Adicionar novo Utilizador</h4>
+
+    <div class="row card mt-4">
+        <div class="card-header">
+            Create New User
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <label for="nomeDoUser" class="form-label">UserName</label>
+                <input type="text" class="form-control" id="nomeDoUser" placeholder="Escreva o nome do novo Utilizador"
+                @bind="newUserName" />
+            </div>
+            <div class="mb-3">
+                <input type="button" class="btn btn-info" onclick="@AddNewUser" value="Create User" />
+            </div>
+        </div>
+    </div>
+}
+@code {
+    string newUserName = string.Empty;
+    string message = "não adicionou nenhuma user";
+    List<ApplicationUser>? users = new List<ApplicationUser>();
+    Dictionary<string, List<string>> userRoles = new();
+    List<IdentityRole>? roles = new List<IdentityRole>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = UserManager.Users.ToList();
+        roles = RoleManager.Roles.ToList();
+        foreach(var user in users)
+        {
+            var userRole = await UserManager.GetRolesAsync(user);
+            userRoles.Add(user.Id, userRole.ToList());
+        } 
+    }
+    protected async Task AddNewUser()
+    {
+        if (!string.IsNullOrWhiteSpace(newUserName))
+        {
+            var userExist = await UserManager.FindByNameAsync(newUserName);
+            if (userExist == null)
+            {
+                var newUser = new ApplicationUser
+                {
+                    UserName = newUserName,
+                    Nome = "NomeExemplo",
+                    Apelido = "ApelidoExemplo",
+                    NIF = 999999990
+                };
+                var result = await UserManager.CreateAsync(newUser, "Password@123");
+                if (result.Succeeded)
+                {
+                    message = "Utilizador criado com sucesso!";
+                    users = UserManager.Users.ToList();
+                    newUserName = string.Empty;
+                    StateHasChanged();
+                }
+            }
+            else
+            {
+                message = "Utilizador já existe";
+            }
+        }
+    }
+   protected async Task RemoverRole(string userId, string roleName)
+    {
+        var user = await UserManager.FindByIdAsync(userId);
+        if(user != null)
+        {
+            var result = await UserManager.RemoveFromRoleAsync(user, roleName);
+            if(result.Succeeded)
+            {
+                userRoles[userId].Remove(roleName);
+                StateHasChanged();
+            }
+        }
+    }
+}

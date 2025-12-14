@@ -1,0 +1,19 @@
+﻿@layout MainLayout
+
+@inherits LayoutComponentBase
+@inject NavigationManager Navigation
+@using GestaoDeLoja.Components.Layout
+@using Microsoft.AspNetCore.Authorization
+
+
+@* @attribute [Authorize(Roles ="Admin")]
+ *@
+<h3>LayoutAdmin</h3>
+<div class="page">
+    @Body
+    <hr />
+    <p>@xpto</p>
+</div>
+@code {
+    string xpto = "Layout Admin ativo";
+}

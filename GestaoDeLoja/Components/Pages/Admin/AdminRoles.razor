@@ -1,0 +1,100 @@
+﻿@page "/admin/roles"
+@using GestaoDeLoja.Data
+@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<ApplicationUser> UserManager
+@inject RoleManager<IdentityRole> RoleManager
+
+<h3>Gestão de Roles</h3>
+<!--Preciso ter a lista de Roles e formulário pra criar nova Role-->
+<h4>Lista de Roles</h4>
+@if(roles is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+    
+        @foreach(var role in roles)
+        {
+
+            <div class="col-4">
+                <p>
+                    @role.Id
+                </p>
+            </div>
+            <div class="col-4">
+                <p>
+                    @role.Name
+                </p>
+            </div>
+            <div class="col-4">
+                <p>
+                    @role.NormalizedName
+                </p>
+            </div>
+        }
+        </div>
+    
+}
+<h4>Nova Role</h4>
+
+<div class="row card mt-4">
+    <div class="card-header">
+        Create New Role
+    </div>
+    <div class="card-body">
+
+        <div class="mb-3">
+            <label for="nomeDaRole" class="form-label">Role</label>
+            <input type="role" class="form-control" id="nomeDaRole" placeholder="Escreva o nome da nova Role"
+          
+            @bind="newRoleName" />
+        </div>
+        <div class="mb-3">
+            <input type="button" class="btn btn-info" onclick="@AddNewRole" value="Create Role" />
+        </div>
+    </div>
+</div>
+
+
+@code {
+
+    string newRoleName = string.Empty;
+    string message = "não adicionou nenhuma Role";
+    List<IdentityRole>? roles = new List<IdentityRole>();
+    protected override async Task OnInitializedAsync()
+    {
+
+        roles = RoleManager.Roles.ToList();
+    }
+    protected async Task AddNewRole()
+    {
+        if(!string.IsNullOrWhiteSpace(newRoleName))
+        {
+            var roleExist = await RoleManager.RoleExistsAsync(newRoleName);
+            if(!roleExist)
+            {
+                var newRole = new IdentityRole
+                {
+                    Name = newRoleName,
+                    NormalizedName = newRoleName.ToUpper()
+                };
+                var result = await RoleManager.CreateAsync(newRole);
+                if(result.Succeeded)
+                {
+                    message = "Role criada com sucesso!";
+                    roles = RoleManager.Roles.ToList();
+                    newRoleName = string.Empty;
+                    StateHasChanged();
+                }
+            }
+            else
+            {
+                message = "Role já existe";
+
+            }
+        }
+    }
+}
